@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "attributes",
+  "info": {
+    "singularName": "attribute",
+    "pluralName": "attributes",
+    "displayName": "Attributes"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "inversedBy": "attributes"
+    },
+    "title": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category",
+      "mappedBy": "attribute"
+    }
+  }
+}
