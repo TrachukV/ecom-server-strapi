@@ -80,6 +80,22 @@
       "relation": "oneToMany",
       "target": "api::promocode.promocode",
       "mappedBy": "users"
+    },
+    "favourites": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product"
+    },
+    "photoUrl": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "avatarUrl": {
+      "type": "string"
     }
   }
 }
