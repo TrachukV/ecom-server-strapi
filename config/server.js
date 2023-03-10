@@ -5,6 +5,20 @@ module.exports = ({ env }) => ({
     app: {
         keys: ['randomKey1', 'randomKey2'],
     },
+     settings: {
+    cors: {
+      enabled: true,
+      origin: env('CORS_ORIGIN', '*'),
+      headers: [
+        'Content-Type',
+        'Authorization',
+        'X-Frame-Options',
+        'Access-Control-Expose-Headers',
+        'Content-Disposition',
+        'X-Download-Options'
+      ]
+    },
+  },
    // webhooks: {
    //populateRelations: env.bool('WEBHOOKS_POPULATE_RELATIONS', false),
     //
