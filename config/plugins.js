@@ -22,4 +22,5 @@ module.exports = ({ env }) => ({
           defaultDepth: 5, // Default is 5
         }
       },
+  'duplicate-button': true,
 });
