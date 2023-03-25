@@ -15,12 +15,6 @@
     "reviewId": {
       "type": "uid"
     },
-    "product": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::product.product",
-      "inversedBy": "reviews"
-    },
     "images": {
       "type": "media",
       "multiple": true,

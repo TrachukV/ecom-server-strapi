@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_availability_colors",
+  "info": {
+    "displayName": "Colors",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "black",
+        "white",
+        "pink",
+        "red",
+        "orange",
+        "yellow",
+        "beige",
+        "green",
+        "light blue",
+        "dark blue",
+        "purple",
+        "brown",
+        "grey"
+      ]
+    }
+  }
+}

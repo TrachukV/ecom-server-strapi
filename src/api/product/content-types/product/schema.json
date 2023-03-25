@@ -36,9 +36,6 @@
     "price": {
       "type": "integer"
     },
-    "totalReviews": {
-      "type": "integer"
-    },
     "description": {
       "type": "text"
     },
@@ -52,12 +49,6 @@
       "relation": "manyToOne",
       "target": "api::product-type.product-type",
       "inversedBy": "products"
-    },
-    "reviews": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::review.review",
-      "mappedBy": "product"
     },
     "brand": {
       "type": "relation",
@@ -76,6 +67,17 @@
       "relation": "manyToOne",
       "target": "api::sale.sale",
       "inversedBy": "products"
+    },
+    "color": {
+      "type": "component",
+      "repeatable": true,
+      "component": "availability.colors"
+    },
+    "rating": {
+      "type": "component",
+      "repeatable": false,
+      "component": "rating.rating",
+      "required": true
     }
   }
 }

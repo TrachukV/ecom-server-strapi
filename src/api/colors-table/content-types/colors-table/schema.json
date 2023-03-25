@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "colors_tables",
+  "info": {
+    "singularName": "colors-table",
+    "pluralName": "colors-tables",
+    "displayName": "Colors Table"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "table": {
+      "type": "json"
+    }
+  }
+}

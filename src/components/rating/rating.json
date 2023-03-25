@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_rating_ratings",
+  "info": {
+    "displayName": "rating",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "totalReviews": {
+      "type": "integer",
+      "default": 0
+    },
+    "averageRating": {
+      "default": 0,
+      "type": "decimal",
+      "required": true,
+      "min": 0,
+      "max": 5
+    },
+    "oneStar": {
+      "type": "integer",
+      "default": 0,
+      "min": 0
+    },
+    "twoStar": {
+      "type": "integer",
+      "default": 0,
+      "min": 0
+    },
+    "threeStar": {
+      "type": "integer",
+      "default": 0,
+      "min": 0
+    },
+    "fourStar": {
+      "type": "integer",
+      "default": 0,
+      "min": 0
+    },
+    "fiveStar": {
+      "type": "integer",
+      "default": 0,
+      "min": 0
+    }
+  }
+}

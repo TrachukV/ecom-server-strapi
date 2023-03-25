@@ -96,6 +96,12 @@
     },
     "avatarUrl": {
       "type": "string"
+    },
+    "fullName": {
+      "type": "string"
+    },
+    "dateOfBirth": {
+      "type": "string"
     }
   }
 }
